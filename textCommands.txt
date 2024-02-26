@@ -1,0 +1,30 @@
+Button Text Attributes in Android
+Here are the main text attributes you can use with a Button in Android:
+
+Basic Attributes:
+
+android:text: Sets the text displayed on the button. This can be a direct string value or a reference to a string resource.
+android:textRes: Refers to a string resource for the text content. More efficient for localization and reusing text across your app.
+android:singleLine: Whether to display the text in a single line (true) or allow wrapping (false).
+android:ellipsize: How to handle text that doesn't fit within the button's width (e.g., "start", "middle", "end").
+android:textAllCaps: Whether to display the text in all uppercase letters.
+Appearance Attributes:
+
+android:textColor: The color of the text. Can be a color resource or a hex value like "#ff0000".
+android:textShadowColor: Color of a shadow behind the text for depth.
+android:textSize: The size of the text in pixels (px), scaled pixels (sp), or points (pt).
+android:textStyle: The style of the text, like "normal", "bold", "italic", or their combinations.
+android:textFontVariationSettings: Specifies advanced font variations like weight, width, etc.
+Advanced Attributes:
+
+android:textIsSelectable: Whether the text can be selected (copied, pasted).
+android:textAlignment: The alignment of the text within the button (e.g., "center", "gravity").
+android:textBackground: Sets a background drawable for the text itself.
+android:textCursorDrawable: The drawable used for the text cursor when editing.
+android:fontFamily: Sets the font family for the text. Requires specific font files in your project.
+Additional Resources:
+
+Android Button documentation: https://developer.android.com/reference/android/widget/Button
+TextAppearance: https://sebhastian.com/android-textappearance/
+Text attributes in general: https://developer.android.com/reference/android/widget/TextView
+Remember that some attributes are deprecated or might not work consistently across all Android versions. Always refer to the official documentation for the latest information and compatibility details.
