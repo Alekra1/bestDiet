@@ -25,21 +25,57 @@
         android:text="@string/starting_button"
         android:textColor="#333333"
         android:textSize="20pt"
+        android:onClick="openLoginActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="252dp"
-            android:layout_height="286dp"
-            android:layout_marginTop="100dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/fruitsonplate" />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="252dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fruitsonplate" />
+
+    <TextView
+        android:id="@+id/starting_screen_text"
+        android:layout_width="357dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/starting_screen_text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="70px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/starting_screen_text2"
+        android:layout_width="352dp"
+        android:layout_height="114dp"
+        android:fontFamily="@font/source_sans_pro_light"
+        android:gravity="center"
+        android:text="@string/starting_screen_text2"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

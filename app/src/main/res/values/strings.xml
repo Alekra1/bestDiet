@@ -7,6 +7,8 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="starting_button">Start</string>
+    <string name="starting_screen_text">Diets - simple and easy!</string>
+    <string name="starting_screen_text2">Create effective and innovative diets in just a couple of clicks, or have an AI assistant do it for you!</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -44,4 +46,5 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_login_screen">login_screen</string>
 </resources>
