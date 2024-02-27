@@ -7,6 +7,8 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="starting_button">Start</string>
+    <string name="starting_screen_text">Diets - їж правильно,</string>
+    <string name="starting_screen_text2">живи здорово!</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
