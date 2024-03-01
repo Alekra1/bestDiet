@@ -19,7 +19,7 @@ public class login_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
 
-        Button myButton = findViewById(R.id.start_registr);
+        Button myButton = findViewById(R.id.register_button);
 
         appDatabase = Room.databaseBuilder(getApplicationContext(),
                         AppDatabase.class, "bestDiet")
