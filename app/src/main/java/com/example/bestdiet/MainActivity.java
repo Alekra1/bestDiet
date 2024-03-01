@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.*;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static AppDatabase appDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +24,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        appDatabase = Room.databaseBuilder(getApplicationContext(),
+                        AppDatabase.class, "bestDiet")
+                .build();
+      /*  user user = null;
+        appDatabase.userDao().insert(user);*/
     }
 }
