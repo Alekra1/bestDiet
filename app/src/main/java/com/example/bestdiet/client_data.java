@@ -23,7 +23,4 @@ public class client_data {
 
     @ColumnInfo(name = "gender")
     public int gender;
-
-
-
 }

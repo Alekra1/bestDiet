@@ -16,18 +16,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        appDatabase = Room.databaseBuilder(getApplicationContext(),
+                        AppDatabase.class, "bestDiet")
+                .build();
+
         Button myButton = findViewById(R.id.starting_button);
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                user user = null;
+                user.setFirstName("Malyobanyi");
+                user.setMiddleName("Maksim");
+                user.setLastName("Yaroslavovich");
+                user.setEmail("reerre");
+                user.setPhone("phonestring");
+                user.setPassword("passwordstring");
+
+                appDatabase.userDao().insert(user);
+
                 Intent intent = new Intent(MainActivity.this, login_activity.class);
                 startActivity(intent);
             }
         });
-        appDatabase = Room.databaseBuilder(getApplicationContext(),
-                        AppDatabase.class, "bestDiet")
-                .build();
-      /*  user user = null;
-        appDatabase.userDao().insert(user);*/
     }
 }
