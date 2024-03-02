@@ -74,8 +74,8 @@
 
     <Button
         android:id="@+id/register_button"
-        android:layout_width="329dp"
-        android:layout_height="88dp"
+        android:layout_width="299dp"
+        android:layout_height="85dp"
         android:layout_marginTop="716dp"
         android:backgroundTint="#a8e328"
         android:color="@color/light_green"
