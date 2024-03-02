@@ -8,6 +8,70 @@
     android:backgroundTint="@color/purple"
     android:fitsSystemWindows="true">
 
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/PIB"
+        android:layout_width="312dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="550dp"
+        android:gravity="center_vertical"
+        android:hint="@string/PIB"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@drawable/border_selector"
+        app:boxStrokeErrorColor="#E91E63"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="4dp"
+        app:hintTextAppearance="@style/register"
+        app:hintTextColor="@color/ugly_green"
+        app:layout_constraintBottom_toTopOf="@+id/register_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/email"
+        android:layout_width="312dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="450dp"
+        android:gravity="center_vertical"
+        android:hint="@string/email"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@drawable/border_selector"
+        app:boxStrokeErrorColor="#E91E63"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="4dp"
+        app:hintTextAppearance="@style/register"
+        app:hintTextColor="@color/ugly_green"
+        app:layout_constraintBottom_toTopOf="@+id/register_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/register_button"
         android:layout_width="329dp"
@@ -17,21 +81,30 @@
         android:color="@color/light_green"
         android:fontFamily="@font/montserrat_extrabold"
         android:text="@string/register_button"
-        android:textColor="#333333"
-        android:textSize="13pt"
+        android:textColor="@color/gray"
+        android:textSize="20pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/PIB"
+
+        android:id="@+id/password"
         android:layout_width="312dp"
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="150dp"
-        android:hint="ПІБ"
+        android:layout_marginBottom="350dp"
+        android:gravity="center_vertical"
+        android:hint="@string/password"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@drawable/border_selector"
+        app:boxStrokeErrorColor="#E91E63"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="4dp"
+        app:hintTextAppearance="@style/register"
+        app:hintTextColor="@color/ugly_green"
         app:layout_constraintBottom_toTopOf="@+id/register_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -39,8 +112,12 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#BF3A3A"
-            android:inputType="text|textPersonName" />
+            android:inputType="text|textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <!--    <com.google.android.material.textfield.TextInputLayout-->
