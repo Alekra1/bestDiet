@@ -24,7 +24,7 @@
         android:fontFamily="@font/montserrat_extrabold"
         android:text="@string/starting_button"
         android:textColor="@color/gray"
-        android:textSize="20pt"
+        android:textSize="17pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -5,8 +5,8 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
     <style name="register">
-    <item name="android:keyTextSize">16sp</item>
-    <item name="android:textSize">16sp</item>
+    <item name="android:keyTextSize">18sp</item>
+    <item name="android:textSize">18sp</item>
     </style>
 
     <style name="Theme.BestDiet" parent="Base.Theme.BestDiet" />

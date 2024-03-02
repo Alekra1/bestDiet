@@ -8,6 +8,22 @@
     android:backgroundTint="@color/purple"
     android:fitsSystemWindows="true">
 
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="299dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="716dp"
+        android:backgroundTint="#a8e328"
+        android:color="@color/light_green"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/register_button"
+        android:textColor="@color/gray"
+        android:textSize="17pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <com.google.android.material.textfield.TextInputLayout
 
         android:id="@+id/PIB"
@@ -15,7 +31,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginBottom="250dp"
         android:gravity="center_vertical"
         android:hint="@string/PIB"
         android:textColorHint="@color/white"
@@ -32,9 +48,11 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="18sp"
             android:inputType="text|textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHighlight="#FFFFFF"
+            android:textColorHighlight="@color/ugly_green"
             android:textColorHint="#FFFFFF"
             android:textColorLink="#FFFFFF" />
 
@@ -47,7 +65,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="450dp"
+        android:layout_marginBottom="150dp"
         android:gravity="center_vertical"
         android:hint="@string/email"
         android:textColorHint="@color/white"
@@ -66,27 +84,13 @@
             android:layout_height="wrap_content"
             android:inputType="text|textEmailAddress"
             android:textColor="#FFFFFF"
-            android:textColorHighlight="#FFFFFF"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="18sp"
+            android:textColorHighlight="@color/ugly_green"
             android:textColorHint="#FFFFFF"
             android:textColorLink="#FFFFFF" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/register_button"
-        android:layout_width="299dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="716dp"
-        android:backgroundTint="#a8e328"
-        android:color="@color/light_green"
-        android:fontFamily="@font/montserrat_extrabold"
-        android:text="@string/register_button"
-        android:textColor="@color/gray"
-        android:textSize="20pt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
 
@@ -95,7 +99,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginBottom="50dp"
         android:gravity="center_vertical"
         android:hint="@string/password"
         android:textColorHint="@color/white"
@@ -103,6 +107,8 @@
         app:boxStrokeErrorColor="#E91E63"
         app:boxStrokeWidth="3dp"
         app:boxStrokeWidthFocused="4dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/ugly_green"
         app:hintTextAppearance="@style/register"
         app:hintTextColor="@color/ugly_green"
         app:layout_constraintBottom_toTopOf="@+id/register_button"
@@ -114,37 +120,59 @@
             android:layout_height="wrap_content"
             android:inputType="text|textPassword"
             android:textColor="#FFFFFF"
-            android:textColorHighlight="#FFFFFF"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="18sp"
+            android:textColorHighlight="@color/ugly_green"
             android:textColorHint="#FFFFFF"
             android:textColorLink="#FFFFFF" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-<!--        android:id="@+id/PIBInput"-->
-<!--        android:layout_width="211dp"-->
-<!--        android:layout_height="49dp"-->
-<!--        android:layout_marginBottom="364dp"-->
-<!--        app:helperTextTextColor="@color/white"-->
-<!--        app:helperText="zov"-->
-<!--        app:counterEnabled="true"-->
-<!--        app:counterMaxLength="30"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.497"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:ignore="MissingConstraints">-->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="411dp"
+        android:layout_height="391dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gradient" />
 
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/PIB"-->
-<!--            android:inputType="text"-->
-<!--            android:drawableStart="@drawable/person"-->
-<!--            android:gravity="start|center_vertical"-->
-<!--            android:paddingHorizontal="0dp" />-->
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="339dp"
+        android:layout_height="647dp"
+        android:layout_marginBottom="332dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/online_doctor" />
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--        android:id="@+id/PIBInput"-->
+    <!--        android:layout_width="211dp"-->
+    <!--        android:layout_height="49dp"-->
+    <!--        android:layout_marginBottom="364dp"-->
+    <!--        app:helperTextTextColor="@color/white"-->
+    <!--        app:helperText="zov"-->
+    <!--        app:counterEnabled="true"-->
+    <!--        app:counterMaxLength="30"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:hint="@string/PIB"-->
+    <!--            android:inputType="text"-->
+    <!--            android:drawableStart="@drawable/person"-->
+    <!--            android:gravity="start|center_vertical"-->
+    <!--            android:paddingHorizontal="0dp" />-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
