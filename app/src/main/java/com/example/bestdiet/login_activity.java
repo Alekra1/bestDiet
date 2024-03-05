@@ -22,6 +22,7 @@ public class login_activity extends AppCompatActivity {
     private user user = new user();
     private AppDatabase appDatabase;
     private UserDao userDao;
+    private ClientDao clientDao;
     private ExecutorService executor = Executors.newSingleThreadExecutor();
 
     @Override
@@ -37,6 +38,8 @@ public class login_activity extends AppCompatActivity {
 
         userDao = appDatabase.userDao();
 
+        clientDao = appDatabase.clientDao();
+
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,29 +49,37 @@ public class login_activity extends AppCompatActivity {
                 EditText textInputEditText = textInputLayout.getEditText();
                 String text = textInputEditText.getText().toString();
                 String[] pibmas = text.split(" ");
-                user.setFirstName(pibmas[0]);
-                user.setMiddleName(pibmas[1]);
-                user.setLastName(pibmas[2]);
+                String PIB = text;
+                if(pibmas.length == 3) {
+                    user.setFirstName(pibmas[0]);
+                    user.setMiddleName(pibmas[1]);
+                    user.setLastName(pibmas[2]);
+                }
+                else Log.d("MyTag", "Некоректно уведено ПІБ");
 
                 // добавление в БД - email
                 textInputLayout = findViewById(R.id.email);
                 textInputEditText = textInputLayout.getEditText();
                 text = textInputEditText.getText().toString();
                 user.setEmail(text);
-
+                PIB = PIB + text;
                 // добавление в БД - пароль
                 textInputLayout = findViewById(R.id.password);
                 textInputEditText = textInputLayout.getEditText();
                 text = textInputEditText.getText().toString();
                 user.setPassword(text);
+                PIB = PIB + text;
 
 //                user.setPhone("phonestring");
+                String finalPIB = PIB;
                 executor.execute(new Runnable() {
                     @Override
                     public void run() {
                         userDao.insert(user);
+                        Log.d("MyTag", "Додано запис:" + finalPIB.toString());
                         List<user> users = userDao.getAllUsers();
                         user.setPhone("phonestring");
+                        userDao.updateUser(user);
 
                     }
                 });

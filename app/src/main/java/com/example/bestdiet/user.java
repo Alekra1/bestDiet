@@ -75,8 +75,15 @@ public class user {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public void setUser(String firstName, String middleName, String lastName, String email, String phone, String password) {
+    public user() {
+        this.firstName = " ";
+        this.middleName = " ";
+        this.lastName = " ";
+        this.email = " ";
+        this.phone = " ";
+        this.password = " ";
+    }
+    public user(String firstName, String middleName, String lastName, String email, String phone, String password) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
