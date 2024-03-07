@@ -13,4 +13,6 @@
     <string name="password">password</string>
     <string name="PIB">ПІБ</string>
     <string name="email">email</string>
+    <string name="gotovo">Готово</string>
+    <string name="complete_register_reminder">Ви завжди можете завершити вашу реєстрацiю у себе в профiлi</string>
 </resources>

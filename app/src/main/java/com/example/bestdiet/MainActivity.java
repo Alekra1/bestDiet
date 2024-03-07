@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.*;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, login_activity.class);
+                Intent intent = new Intent(MainActivity.this, correct_register.class);
                 startActivity(intent);
             }
         });

@@ -26,6 +26,9 @@
         <activity
             android:name=".login_activity">
         </activity>
+        <activity
+            android:name=".correct_register">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
