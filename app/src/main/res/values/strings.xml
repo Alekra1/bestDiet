@@ -10,6 +10,7 @@
     <string name="starting_screen_text">Diets - їж правильно,\n</string>
     <string name="starting_screen_text2">живи здорово!</string>
     <string name="register_button">Далі</string>
+    <string name="login_button">Вхід</string>
     <string name="password">password</string>
     <string name="PIB">ПІБ</string>
     <string name="email">email</string>

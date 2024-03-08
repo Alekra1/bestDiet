@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".login_activity">
+            android:name=".registr_activity">
         </activity>
         <activity
             android:name=".correct_register">
