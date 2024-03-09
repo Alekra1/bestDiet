@@ -7,7 +7,7 @@
     android:background="@color/purple">
 
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/correctreg_button"
         android:layout_width="299dp"
         android:layout_height="85dp"
         android:layout_marginBottom="32dp"

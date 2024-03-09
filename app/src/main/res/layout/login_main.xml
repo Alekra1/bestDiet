@@ -14,10 +14,10 @@
         android:backgroundTint="@color/purple">
 
         <Button
-            android:id="@+id/register_button"
+            android:id="@+id/login_button"
             android:layout_width="299dp"
             android:layout_height="85dp"
-            android:layout_marginTop="700dp"
+            android:layout_marginTop="740dp"
             android:layout_marginBottom="17dp"
             android:backgroundTint="#a8e328"
             android:color="@color/light_green"
@@ -33,7 +33,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/email"
+            android:id="@+id/email_login"
             android:layout_width="312dp"
             android:layout_height="64dp"
             android:layout_marginStart="32dp"
@@ -48,7 +48,7 @@
             app:boxStrokeWidthFocused="4dp"
             app:hintTextAppearance="@style/register"
             app:hintTextColor="@color/ugly_green"
-            app:layout_constraintBottom_toTopOf="@+id/register_button"
+            app:layout_constraintBottom_toTopOf="@+id/login_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.485"
             app:layout_constraintStart_toStartOf="parent">
@@ -68,7 +68,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/password"
+            android:id="@+id/password_login"
             android:layout_width="312dp"
             android:layout_height="64dp"
             android:layout_marginStart="32dp"
@@ -85,7 +85,7 @@
             app:endIconTint="@color/ugly_green"
             app:hintTextAppearance="@style/register"
             app:hintTextColor="@color/ugly_green"
-            app:layout_constraintBottom_toTopOf="@+id/register_button"
+            app:layout_constraintBottom_toTopOf="@+id/login_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.485"
             app:layout_constraintStart_toStartOf="parent">
@@ -104,7 +104,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView_login"
             android:layout_width="411dp"
             android:layout_height="391dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +114,7 @@
             app:srcCompat="@drawable/gradient" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView_login2"
             android:layout_width="343dp"
             android:layout_height="409dp"
             app:layout_constraintEnd_toEndOf="parent"

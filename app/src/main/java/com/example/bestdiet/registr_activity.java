@@ -26,7 +26,7 @@ public class registr_activity extends AppCompatActivity {
     private ClientDao clientDao;
     private ExecutorService executor = Executors.newSingleThreadExecutor();
 
-    private boolean isValidEmail(CharSequence target) {
+    public boolean isValidEmail(CharSequence target) {
         return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
     }
 
@@ -50,7 +50,7 @@ public class registr_activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // добавление в БД - ПІБ
-                TextInputLayout textInputLayout = findViewById(R.id.PIB);
+                TextInputLayout textInputLayout = findViewById(R.id.PIBregistr);
                 EditText textInputEditText = textInputLayout.getEditText();
                 String text = textInputEditText.getText().toString();
                 String[] pibmas = text.split(" ");
@@ -67,7 +67,7 @@ public class registr_activity extends AppCompatActivity {
                 }
 
                 // добавление в БД - email
-                textInputLayout = findViewById(R.id.email);
+                textInputLayout = findViewById(R.id.emailregistr);
                 textInputEditText = textInputLayout.getEditText();
                 text = textInputEditText.getText().toString();
                 if (isValidEmail(text)) {
@@ -79,7 +79,7 @@ public class registr_activity extends AppCompatActivity {
                 }
 
                 // добавление в БД - пароль
-                textInputLayout = findViewById(R.id.password);
+                textInputLayout = findViewById(R.id.passwordregistr);
                 textInputEditText = textInputLayout.getEditText();
                 text = textInputEditText.getText().toString();
                 user.setPassword(text);
