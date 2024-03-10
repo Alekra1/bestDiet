@@ -37,13 +37,11 @@ public class registr_activity extends AppCompatActivity {
 
         Button myButton = findViewById(R.id.register_button);
 
-        appDatabase = Room.databaseBuilder(getApplicationContext(),
-                        AppDatabase.class, "bestDiet")
-                .build();
+        AppDatabase database = AppDatabase.getAppDatabase(getApplicationContext());
 
-        userDao = appDatabase.userDao();
+        userDao = database.userDao();
 
-        clientDao = appDatabase.clientDao();
+        clientDao = database.clientDao();
 
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,5 +98,10 @@ public class registr_activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+        // Метод для получения текущего экземпляра appDatabase
+    public AppDatabase getAppDatabase() {
+            return appDatabase;
     }
 }

@@ -22,9 +22,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    // Метод для получения текущего экземпляра appDatabase
-//    public AppDatabase getAppDatabase() {
-//        return appDatabase;
-//    }
 }
 

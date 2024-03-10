@@ -2,9 +2,9 @@ package com.example.bestdiet;
 
 import androidx.room.*;
 @Entity(tableName = "clients")
-public class client_data {
+public class clients {
     @PrimaryKey(autoGenerate = true)
-    public int uid;
+    public int clientid;
 
     @ColumnInfo(name = "first_name")
     public String firstName;
@@ -21,7 +21,7 @@ public class client_data {
     @ColumnInfo(name = "gender")
     public int gender;
 
-    public client_data() {
+    public clients() {
         this.firstName = " ";
         this.middleName = " ";
         this.lastName = " ";
@@ -29,7 +29,7 @@ public class client_data {
         this.gender = 1;
     }
     // Конструктор
-    public client_data(String firstName, String middleName, String lastName, int year, int gender) {
+    public clients(String firstName, String middleName, String lastName, int year, int gender) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -39,11 +39,11 @@ public class client_data {
 
     // Геттеры и сеттеры для каждого поля
     public int getUid() {
-        return uid;
+        return clientid;
     }
 
     public void setUid(int uid) {
-        this.uid = uid;
+        this.clientid = uid;
     }
 
     public String getFirstName() {

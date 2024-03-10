@@ -14,6 +14,12 @@ public interface UserDao {
     @Query("SELECT * FROM users WHERE uid = :uidpar")
     user getuserbyid(int uidpar);
 
+    @Query("SELECT * FROM users WHERE email = :emailpar")
+    user getuserbyemail(String emailpar);
+
+    @Query("SELECT * FROM users WHERE email = :emailpar")
+    boolean checkuserbyemail(String emailpar);
+
     @Update
     void updateUser(user user);
 
