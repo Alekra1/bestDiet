@@ -45,5 +45,4 @@ dependencies {
 
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
-    implementation ("com.github.Dimezis:BlurView:version-2.0.4")
 }
