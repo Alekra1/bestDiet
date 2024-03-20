@@ -13,6 +13,24 @@
         android:background="#161616"
         android:backgroundTint="@color/purple">
 
+        <TextView
+            android:id="@+id/starting_screen_text2"
+            android:layout_width="385dp"
+            android:layout_height="104dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="@string/ukr_login"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.551" />
+
         <Button
             android:id="@+id/login_button"
             android:layout_width="299dp"
@@ -111,16 +129,18 @@
             app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/gradient" />
+            app:srcCompat="@drawable/gradient_login" />
 
         <ImageView
             android:id="@+id/imageView_login2"
-            android:layout_width="343dp"
-            android:layout_height="409dp"
+            android:layout_width="286dp"
+            android:layout_height="306dp"
+            android:layout_marginTop="84dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/online_doctor" />
+            app:srcCompat="@drawable/emoji_key" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -3,14 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/purple">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="422dp"
-        android:layout_height="77dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="411dp"
+        android:layout_height="391dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
+        app:srcCompat="@drawable/gradient_main_menu" />
+
+    <ImageView
+        android:id="@+id/main_menu_email"
+        android:layout_width="170dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emoji_email" />
+
+    <ImageView
+        android:id="@+id/main_menu_edit"
+        android:layout_width="157dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emoji_pencil" />
+
+    <ImageView
+        android:id="@+id/main_menu_personal_account"
+        android:layout_width="155dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="256dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emoji_person" />
+
+    <ImageView
+        android:id="@+id/main_menu_chat"
+        android:layout_width="163dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="256dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emoji_chat" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="318dp"
+        android:layout_height="264dp"
+        android:layout_marginBottom="128dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,9 +23,9 @@
 
     <TextView
         android:id="@+id/starting_screen_text"
-        android:layout_width="321dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="96dp"
+        android:layout_width="270dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="124dp"
         android:fontFamily="@font/montserrat"
         android:text="@string/complete_register_reminder"
         android:textColor="#FFFFFF"
@@ -37,7 +36,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.836" />
+        app:layout_constraintVertical_bias="0.859" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -50,22 +49,23 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="279dp"
-        android:layout_height="298dp"
+        android:layout_width="411dp"
+        android:layout_height="388dp"
         android:layout_marginTop="56dp"
-        android:src="@drawable/checkmark2"
+        android:src="@drawable/ok_hand"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="79dp"
-        android:layout_height="375dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/notepad" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/emoji_checkmark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
