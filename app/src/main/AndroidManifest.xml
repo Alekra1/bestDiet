@@ -32,7 +32,12 @@
         <activity
             android:name=".login_activity">
         </activity>
-
+        <activity
+            android:name=".email">
+        </activity>
+        <activity
+            android:name=".main_menu">
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
