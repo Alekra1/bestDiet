@@ -129,18 +129,18 @@
             app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/gradient_login" />
+            app:srcCompat="@drawable/gradient" />
 
         <ImageView
             android:id="@+id/imageView_login2"
-            android:layout_width="286dp"
-            android:layout_height="306dp"
-            android:layout_marginTop="84dp"
+            android:layout_width="383dp"
+            android:layout_height="309dp"
+            android:layout_marginTop="120dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/emoji_key" />
+            app:srcCompat="@drawable/a_woman_who_uses_a_computer_inspiration_svgrepo_com" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

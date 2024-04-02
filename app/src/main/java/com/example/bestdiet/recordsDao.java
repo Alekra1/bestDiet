@@ -20,4 +20,3 @@ public interface recordsDao {
         @Query("DELETE FROM records")
         void deleteAllClients();
 }
-[]
