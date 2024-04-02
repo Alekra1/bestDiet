@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rounded_button_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- Background Color -->
+    <solid android:color="@color/gray" />
+    <!-- Border Color and Width -->
+    <stroke
+        android:width="4dp"
+        android:color="@color/ugly_green" />
+    <!-- Corner Radius -->
+    <corners android:radius="12dp" />
+</shape>
