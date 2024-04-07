@@ -157,7 +157,7 @@
         app:srcCompat="@drawable/email_svgrepo_com" />
 
     <ImageView
-        android:id="@+id/imagedsadView6"
+        android:id="@+id/imagedsadView7"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="29dp"
