@@ -13,6 +13,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="140dp"
         android:background="@drawable/rounded_button_shape"
+        android:stateListAnimator="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,6 +24,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/rounded_button_shape_oval"
+        android:stateListAnimator="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,6 +35,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_button_shape"
+        android:stateListAnimator="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,11 +43,22 @@
         android:id="@+id/my_button_233dsadas"
         android:layout_width="139dp"
         android:layout_height="136dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="52dp"
         android:background="@drawable/rounded_button_shape"
+        android:stateListAnimator="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagedsadVdsaiew6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/my_button_233dsadas"
+        app:layout_constraintTop_toTopOf="@+id/my_button_233dsadas"
+        app:srcCompat="@drawable/user" />
 
     <android.widget.Button
         android:id="@+id/my_button_23dsads32"
@@ -53,15 +67,17 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="312dp"
         android:background="@drawable/rounded_button_shape"
+        android:stateListAnimator="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.widget.Button
+        android:stateListAnimator="@null"
         android:id="@+id/my_button_2dsad332"
         android:layout_width="139dp"
         android:layout_height="136dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="52dp"
         android:background="@drawable/rounded_button_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -100,15 +116,65 @@
         android:layout_marginTop="476dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/rounded_calendar_background"
-        android:theme="@style/CalenderViewCustom"
         android:dateTextAppearance="@style/CalenderViewDateCustomText"
-        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
         android:selectedWeekBackgroundColor="#00BCD4"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/imageView6321"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/my_button_2332dsa"
+        app:layout_constraintTop_toTopOf="@+id/my_button_2332dsa"
+        app:srcCompat="@drawable/exit_svgrepo_com" />
+
+    <ImageView
+        android:id="@+id/imageVie321w6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/my_button_aasa2dsa332dsa"
+        app:layout_constraintTop_toTopOf="@+id/my_button_aasa2dsa332dsa"
+        app:srcCompat="@drawable/avatar_svgrepo_com" />
+
+    <ImageView
+        android:id="@+id/imagedsadView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="@+id/my_button_2332"
+        app:layout_constraintTop_toTopOf="@+id/my_button_2332"
+        app:srcCompat="@drawable/email_svgrepo_com" />
+
+    <ImageView
+        android:id="@+id/imagedsadView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/my_button_23dsads32"
+        app:layout_constraintTop_toTopOf="@+id/my_button_23dsads32"
+        app:srcCompat="@drawable/chat_svgrepo_com" />
+
+    <ImageView
+        android:id="@+id/imagsdaedsadsadView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/my_button_2dsad332"
+        app:layout_constraintTop_toTopOf="@+id/my_button_2dsad332"
+        app:srcCompat="@drawable/pencil_tool_svgrepo_com" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
