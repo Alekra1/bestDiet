@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/client_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:radius="16dp">
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пошук"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/search_results_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

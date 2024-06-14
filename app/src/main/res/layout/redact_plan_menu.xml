@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView_meal_of_plan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="417dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            app:srcCompat="@drawable/back_buttom" />
+
+        <TextView
+            android:id="@+id/name_meal"
+            android:layout_width="176dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="Сніданок"
+            android:textAlignment="center"
+            android:textColor="@color/silver"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            app:srcCompat="@drawable/add_new_element_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@drawable/navigate_menu_line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/home_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/free_icon_font_home" />
+
+        <ImageButton
+            android:id="@+id/clients_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/users_font_select" />
+
+        <ImageButton
+            android:id="@+id/chatclients_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/chats_icon" />
+
+        <ImageButton
+            android:id="@+id/profile_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user_icon" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

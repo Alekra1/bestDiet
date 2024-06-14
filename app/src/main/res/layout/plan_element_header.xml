@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/header_plan_border"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:textAlignment="center">
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/name_of_meal"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|fill_horizontal"
+            android:text="Cніданок"
+            android:textColor="@color/silver"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="105dp"
+            android:layout_height="71dp"
+            android:layout_weight="1"
+            android:text="7-9 pm"
+            android:textColor="@color/silver"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/redact_meal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="center"
+            app:srcCompat="@drawable/redact_plan_logo" />
+    </LinearLayout>
+
+</LinearLayout>

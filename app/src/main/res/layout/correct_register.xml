@@ -10,7 +10,7 @@
         android:id="@+id/correct_register_button"
         android:layout_width="299dp"
         android:layout_height="85dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="70dp"
         android:backgroundTint="#a8e328"
         android:color="@color/light_green"
         android:fontFamily="@font/montserrat_extrabold"
@@ -22,28 +22,39 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Успішна реєстрація"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/starting_screen_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
         android:id="@+id/starting_screen_text"
-        android:layout_width="322dp"
-        android:layout_height="70dp"
+        android:layout_width="345dp"
+        android:layout_height="78dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="@string/complete_register_reminder"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/silver"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textColorLink="#FFFFFF"
-        android:textSize="50px"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/correct_register_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="411dp"
-        android:layout_height="391dp"
+        android:layout_width="410dp"
+        android:layout_height="467dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

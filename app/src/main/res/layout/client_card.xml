@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@drawable/navigate_menu_line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/home_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/free_icon_font_home" />
+
+        <ImageButton
+            android:id="@+id/clients_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/users_font_select" />
+
+        <ImageButton
+            android:id="@+id/chatclients_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/chats_icon" />
+
+        <ImageButton
+            android:id="@+id/profile_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user_icon" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/client_cardRecyclerView"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

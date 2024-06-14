@@ -4,116 +4,237 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple">
-
-    <android.widget.Button
-        android:id="@+id/my_button_2332"
-        android:layout_width="139dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/rounded_button_shape"
-        android:stateListAnimator="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <android.widget.Button
-        android:id="@+id/my_button_aasa2dsa332dsa"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/rounded_button_shape_oval"
-        android:stateListAnimator="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <android.widget.Button
-        android:id="@+id/my_button_2332dsa"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_button_shape"
-        android:stateListAnimator="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <android.widget.Button
-        android:id="@+id/my_button_233dsadas"
-        android:layout_width="139dp"
-        android:layout_height="136dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginEnd="52dp"
-        android:background="@drawable/rounded_button_shape"
-        android:stateListAnimator="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imagedsadVdsaiew6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="25dp"
-        app:layout_constraintEnd_toEndOf="@+id/my_button_233dsadas"
-        app:layout_constraintTop_toTopOf="@+id/my_button_233dsadas"
-        app:srcCompat="@drawable/user" />
-
-    <android.widget.Button
-        android:id="@+id/my_button_23dsads32"
-        android:layout_width="139dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="312dp"
-        android:background="@drawable/rounded_button_shape"
-        android:stateListAnimator="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <android.widget.Button
-        android:stateListAnimator="@null"
-        android:id="@+id/my_button_2dsad332"
-        android:layout_width="139dp"
-        android:layout_height="136dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="52dp"
-        android:background="@drawable/rounded_button_shape"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4323"
-        android:layout_width="411dp"
-        android:layout_height="391dp"
-        android:layout_marginTop="468dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gradient" />
-
-    <ImageView
-        android:id="@+id/imageView432323"
-        android:layout_width="411dp"
-        android:layout_height="391dp"
-        android:layout_marginTop="448dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gradient_reverse" />
+    android:background="@color/gray">
 
     <!-- CalendarView with styled background and shadow -->
 
     <!-- Gradient overlay for aesthetics -->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/name_user"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:spacing="16dp">
+
+                <!-- Быстрый доступ к основным функциям -->
+
+                <!-- Календарь -->
+
+                <!-- Последние обновления и уведомления -->
+
+                <!-- Статистика и прогресс -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Завдання"
+                        android:textAlignment="viewStart"
+                        android:textColor="#F1EAEA"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageButton
+                            android:id="@+id/task_buttom"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/gray"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/circle" />
+
+                        <LinearLayout
+                            android:layout_width="272dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:text="Створити план для Шевченко Сергія"
+                                android:textColor="@color/silver"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_weight="1"
+                                android:text="Вт 28 травня 12:00"
+                                android:textColor="#4CAF50" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@color/gray"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/delete_icon" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Статистика и прогрес"
+                    android:textColor="#F4F0F0"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="8dp"
+                        android:text="Активних користувачів"
+                        android:textColor="@color/silver"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="10"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/silver"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/user_icon_select" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="255dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Виконані завдання:"
+                        android:textColor="@color/silver"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="10"
+                        android:textAlignment="textEnd"
+                        android:textColor="#4CAF50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="/"
+                        android:textAlignment="center"
+                        android:textColor="#ECE6E6"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="12"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/silver"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="411dp"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcome_message"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:text="Добрий день,"
+            android:textColor="@color/silver"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/name_user"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:text="Максим"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="275dp"
+        android:layout_height="304dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="476dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/rounded_calendar_background"
         android:dateTextAppearance="@style/CalenderViewDateCustomText"
@@ -121,60 +242,68 @@
         android:theme="@style/CalenderViewCustom"
         android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
         app:layout_constraintWidth_default="wrap" />
 
-    <ImageView
-        android:id="@+id/imageView6321"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/my_button_2332dsa"
-        app:layout_constraintTop_toTopOf="@+id/my_button_2332dsa"
-        app:srcCompat="@drawable/exit_svgrepo_com" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@drawable/navigate_menu_line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
-    <ImageView
-        android:id="@+id/imageVie321w6"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="19dp"
-        app:layout_constraintEnd_toEndOf="@+id/my_button_aasa2dsa332dsa"
-        app:layout_constraintTop_toTopOf="@+id/my_button_aasa2dsa332dsa"
-        app:srcCompat="@drawable/avatar_svgrepo_com" />
+        <ImageButton
+            android:id="@+id/home_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/free_icon_font_home_select" />
 
-    <ImageView
-        android:id="@+id/imagedsadView6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="29dp"
-        app:layout_constraintEnd_toEndOf="@+id/my_button_2332"
-        app:layout_constraintTop_toTopOf="@+id/my_button_2332"
-        app:srcCompat="@drawable/email_svgrepo_com" />
+        <ImageButton
+            android:id="@+id/clients_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/users_font" />
 
-    <ImageView
-        android:id="@+id/imagedsadView7"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="27dp"
-        app:layout_constraintEnd_toEndOf="@+id/my_button_23dsads32"
-        app:layout_constraintTop_toTopOf="@+id/my_button_23dsads32"
-        app:srcCompat="@drawable/chat_svgrepo_com" />
+        <ImageButton
+            android:id="@+id/chatclients_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/chats_icon" />
 
-    <ImageView
-        android:id="@+id/imagsdaedsadsadView6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/my_button_2dsad332"
-        app:layout_constraintTop_toTopOf="@+id/my_button_2dsad332"
-        app:srcCompat="@drawable/pencil_tool_svgrepo_com" />
+        <ImageButton
+            android:id="@+id/profile_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user_icon" />
 
+    </LinearLayout>
+
+
+    <!-- Календарь -->
+
+    <!-- Последние обновления и уведомления -->
+
+    <!-- Статистика и прогресс -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

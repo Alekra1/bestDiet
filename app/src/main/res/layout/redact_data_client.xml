@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#161616"
+    android:backgroundTint="@color/gray">
+
+    <LinearLayout
+        android:id="@+id/redact_plan_Layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_element"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_racion"
+            android:layout_width="207dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Редагування плану"
+            android:textAlignment="center"
+            android:textColor="@color/silver"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/redact_plan_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:contentDescription="@string/PIB"
+            android:scaleType="center"
+            app:srcCompat="@drawable/redact_plan_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_element"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redact_plan_Layout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_red_plan"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Редагування даних"
+                android:textAlignment="center"
+                android:textColor="@color/silver"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/view19"
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/redact_info_client"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:contentDescription="@string/PIB"
+                android:scaleType="center"
+                app:srcCompat="@drawable/redact_client_data_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstname_and_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/firstname_redact"
+                android:layout_width="170dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/firstname"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/firstname_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований "
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/name_redact"
+                android:layout_width="170dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/name"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lastname_and_year_redact"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/lastname_redact"
+                android:layout_width="170dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/lastname"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lastname_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/year_redact"
+                android:layout_width="170dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/year"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/year_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/gender_redact"
+                android:layout_width="170dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/gender"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/gender_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/weight_redact"
+                android:layout_width="170dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/weight"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/weight_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/resultweight_redact"
+                android:layout_width="170dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/resweight"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/resultweight_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/count_of_meal_redact"
+                android:layout_width="170dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/mealcount"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/count_of_meal_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/activity_days_redact"
+                android:layout_width="170dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:hint="@string/activitydays"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_days_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="text|textPersonName"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="89dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/recomendation_redact"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="250dp"
+                android:gravity="center_vertical"
+                android:hint="@string/limitation"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@drawable/border_selector"
+                app:boxStrokeErrorColor="#E91E63"
+                app:boxStrokeWidth="3dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:hintTextAppearance="@style/register"
+                app:hintTextColor="@color/ugly_green"
+                app:layout_constraintBottom_toTopOf="@+id/register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/recomendation_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine|textPersonName"
+                    android:minLines="3"
+                    android:overScrollMode="always"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:text="Мальований Максим Ярославович"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="@color/ugly_green"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

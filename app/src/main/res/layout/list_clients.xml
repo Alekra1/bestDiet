@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:backgroundTint="@color/gray">
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/firstname_redact"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="250dp"
+        android:gravity="center_vertical"
+        android:hint="@string/search"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@drawable/border_selector"
+        app:boxStrokeErrorColor="#E91E63"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="4dp"
+        app:hintTextAppearance="@style/register"
+        app:hintTextColor="@color/ugly_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstname_input"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:inputType="text|textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="@color/ugly_green"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewlistclients"
+        android:layout_width="0dp"
+        android:layout_height="664dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstname_redact"
+        app:layout_constraintVertical_bias="0.666">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@drawable/navigate_menu_line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/home_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/free_icon_font_home" />
+
+        <ImageButton
+            android:id="@+id/clients_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/users_font_select" />
+
+        <ImageButton
+            android:id="@+id/chatclients_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/chats_icon" />
+
+        <ImageButton
+            android:id="@+id/profile_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user_icon" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
